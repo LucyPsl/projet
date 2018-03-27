@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="APPLICATION_CENTRE_FORMATION" transaction-type="RESOURCE_LOCAL">
+		<class>fr.esic.solutec.model.BilanGraphique</class>
+		<class>fr.esic.solutec.model.ContactSociete</class>
+		<class>fr.esic.solutec.model.Cursus</class>
+		<class>fr.esic.solutec.model.EmployeCentre</class>
+		<class>fr.esic.solutec.model.FicheEmargement</class>
+		<class>fr.esic.solutec.model.FicheEvaluation</class>
+		<class>fr.esic.solutec.model.Formateur</class>
+		<class>fr.esic.solutec.model.Formation</class>
+		<class>fr.esic.solutec.model.Lieu</class>
+		<class>fr.esic.solutec.model.Possede</class>
+		<class>fr.esic.solutec.model.PossedePK</class>
+		<class>fr.esic.solutec.model.Salle</class>
+		<class>fr.esic.solutec.model.SessionCursus</class>
+		<class>fr.esic.solutec.model.SessionFormation</class>
+		<class>fr.esic.solutec.model.Societe</class>
+		<class>fr.esic.solutec.model.Stagiaire</class>
+		<class>fr.esic.solutec.model.Theme</class>
+		<class>fr.esic.solutec.model.User</class>
+		<class>fr.esic.solutec.model.Ville</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/projet_formation"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>

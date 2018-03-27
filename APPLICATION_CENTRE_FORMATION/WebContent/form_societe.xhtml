@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+Gestion des sociétés
+</h:head> 
+
+<p>
+
+</p>
+
+<body> 
+
+<p/> 
+
+
+<select name="liste_societes">
+
+<option value="vide" selected="selected"> </option>
+
+<option value="valeur1 ">Valeur 1</option>
+
+</select>
+<p />
+
+
+<p/>
+<h:outputText value="Détails" />
+
+<h:panelGrid columns="2"
+rendered="#{societeDetailsBean.selectedSociete}">
+<h:outputText value="Nom" />
+<h:outputText value="#{societeDetailsBean.selectedSociete.nom}" />
+
+</h:panelGrid>
+<p />
+
+
+
+
+
+
+
+<h:form class="hform_boutons" >
+<h:panelGrid> 
+<h:commandButton  value="Modifier"  action="modifier_societe"  />
+<h:commandButton  value="Supprimer"  action="supprimer_societe"  />
+<h:commandButton  value="Ajouter nouvelle société"  action="form_ajouter_societe"  />
+</h:panelGrid>
+
+</h:form>
+
+
+</body> 
+</html>
+
+
